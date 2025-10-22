@@ -1,0 +1,30 @@
+
+###
+GET http://localhost:5206/users HTTP/1.1
+X-API-Key: HereComesTheSunAndISayItsAlright
+
+###
+POST http://localhost:5206/users/add HTTP/1.1
+X-API-Key: HereComesTheSunAndISayItsAlright
+Content-Type: application/json
+
+{
+  "name": "Joe Smith",
+  "email": "joe@gmail.com",
+  "password": "sfsfsdfdf56565"
+}
+
+###
+DELETE  http://localhost:5206/users/delete/0 HTTP/1.1
+X-API-Key: HereComesTheSunAndISayItsAlright
+
+###
+PUT http://localhost:5206/users/update/1 HTTP/1.1
+X-API-Key: HereComesTheSunAndISayItsAlright
+Content-Type: application/json
+
+{
+  "name": "Bob Dylan",
+  "email": "givepeace@chance.com",
+  "password": "G!v3P3@c3@Ch@nce"
+}
