@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#fffbeb"/>
+  <polyline points="40,300 140,220 240,250 340,190 440,210 540,160 600,180" stroke="#f59e0b" stroke-width="6" fill="none"/>
+  <rect x="60" y="80" width="520" height="200" fill="none" stroke="#f59e0b" stroke-dasharray="6 6"/>
+  <text x="50%" y="30" text-anchor="middle" font-size="20" font-family="Arial" fill="#92400e">Energy Optimization</text>
+</svg>

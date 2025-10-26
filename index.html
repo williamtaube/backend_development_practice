@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>William Taube | Solution Architect</title>
+  <meta name="description" content="Portfolio of William Taube — Solution Architect designing turnkey industrial systems, including smart warehouse solutions, IIoT, and edge-to-cloud platforms." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/profile.svg" width="40" height="40" alt="WT monogram logo" />
+        <span class="brand-name">William Taube</span>
+      </div>
+
+      <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav id="primary-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#writing">Writing</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">🌓</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" role="region" aria-label="Intro">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Solution Architect — Industrial & Digital Systems</h1>
+          <p class="tagline">Designing <strong>turnkey industrial solutions</strong> that connect machines, data, and people — with a focus on smart warehouses, IIoT, and edge-to-cloud architecture.</p>
+          <p class="sub">Currently Solution Architect at <span class="company">Gamma Electronics</span>, building reliable, scalable systems for real-world operations.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img src="assets/warehouse.svg" width="100%" height="auto" alt="Illustration of an automated warehouse with conveyors and sensors connected to cloud" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">About</h2>
+        <p>
+          I’m William Taube, a Solution Architect focused on bringing together operational technology (OT) and information technology (IT).
+          My work spans warehouse automation, industrial IoT, and cloud platforms — translating business goals into secure, scalable architectures.
+        </p>
+        <ul class="skills" aria-label="Skills">
+          <li><strong>Architecture:</strong> Turnkey Solution Design, Edge–Cloud Integration, System Blueprints</li>
+          <li><strong>Tech:</strong> Azure, AWS, Docker, Kubernetes, MQTT, OPC UA, Node-RED, Python, TypeScript</li>
+          <li><strong>Domains:</strong> Smart Warehouses, Digital Twins, Data Engineering, Energy Optimization</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Projects</h2>
+
+        <div class="filters" role="toolbar" aria-label="Project filters">
+          <button class="chip active" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" data-filter="warehouse" aria-pressed="false">Warehouse</button>
+          <button class="chip" data-filter="iot" aria-pressed="false">IIoT</button>
+          <button class="chip" data-filter="energy" aria-pressed="false">Energy</button>
+        </div>
+
+        <div class="grid projects-grid">
+          <article class="card project" data-tags="warehouse">
+            <img src="assets/warehouse.svg" alt="Diagram of a smart warehouse system" />
+            <div class="card-body">
+              <h3>Turnkey Smart Warehouse</h3>
+              <p>Designed an end-to-end warehouse solution: AS/RS + conveyors, WMS integration, edge gateway network, and cloud analytics for OEE and predictive maintenance.</p>
+              <ul class="meta">
+                <li>Stack: MQTT, OPC UA, Azure IoT Hub, Kubernetes</li>
+                <li>Outcome: &minus;18% downtime, +22% throughput</li>
+              </ul>
+              <details>
+                <summary>Architecture highlights (accessible)</summary>
+                <p>Redundant gateways, topic namespace strategy, digital twin models, and role-based access with managed identities.</p>
+              </details>
+            </div>
+          </article>
+
+          <article class="card project" data-tags="iot">
+            <img src="assets/iot.svg" alt="Edge IoT devices connected to cloud services" />
+            <div class="card-body">
+              <h3>Edge IIoT Platform</h3>
+              <p>Standardized telemetry ingestion from PLCs and sensors; established schema registry and device provisioning at scale.</p>
+              <ul class="meta">
+                <li>Stack: Docker, Node-RED, Kafka, Timeseries DB</li>
+                <li>Outcome: Unified data layer across 4 sites</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card project" data-tags="energy">
+            <img src="assets/energy.svg" alt="Energy dashboards and building sensors" />
+            <div class="card-body">
+              <h3>Energy Optimization Suite</h3>
+              <p>Facility monitoring with anomaly detection and load shifting; integrated with MES for production-aware savings.</p>
+              <ul class="meta">
+                <li>Stack: Python, Azure Functions, Grafana</li>
+                <li>Outcome: −11% energy cost YoY</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="writing" class="section" aria-labelledby="writing-title">
+      <div class="container">
+        <h2 id="writing-title">Writing</h2>
+        <ul class="posts">
+          <li>
+            <a href="#" aria-label="Read The Architecture of a Modern Smart Warehouse (placeholder link)">
+              The Architecture of a Modern Smart Warehouse
+            </a>
+            <span class="tag">Warehouse</span>
+          </li>
+          <li>
+            <a href="#" aria-label="Read Designing for Data Gravity: Edge to Cloud (placeholder link)">
+              Designing for Data Gravity: Edge → Cloud
+            </a>
+            <span class="tag">IIoT</span>
+          </li>
+          <li>
+            <a href="#" aria-label="Read Five Diagrams Every Solution Should Have (placeholder link)">
+              Five Diagrams Every Solution Should Have
+            </a>
+            <span class="tag">Architecture</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Contact</h2>
+        <p>Interested in warehouse automation, IIoT platforms, or energy optimization? Let’s talk.</p>
+        <form class="contact-form" aria-describedby="contact-help">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required aria-required="true" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-required="true" />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+          </div>
+          <p id="contact-help" class="help-text">This demo form uses JavaScript to simulate a send.</p>
+          <button type="submit" class="btn primary">Send message</button>
+          <span id="form-status" role="status" aria-live="polite" class="form-status" aria-atomic="true"></span>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> William Taube. All rights reserved.</p>
+      <a href="#top" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
